@@ -1,0 +1,43 @@
+{
+  "name": "time-ago-lite",
+  "version": "1.0.0",
+  "description": "A lightweight, zero-dependency relative time formatter (e.g. \"5 minutes ago\", \"in 2 days\").",
+  "keywords": [
+    "time-ago",
+    "relative-time",
+    "time",
+    "date",
+    "format",
+    "human-readable",
+    "zero-dependency",
+    "lite"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./src/index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./src/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "src",
+    "index.d.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "node scripts/build.js",
+    "pretest": "node scripts/build.js",
+    "test": "node --test",
+    "prepack": "node scripts/build.js"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
